@@ -12,6 +12,12 @@ namespace Tests
     {
         [Theory]
         [InlineData("+5 Dexterity Vest", 10, 20, 19)]
+        [InlineData("Aged Brie", 2, 0, 1)]
+        [InlineData("Elixir of the Mongoose", 5, 7, 6)]
+        [InlineData("Sulfuras, Hand of Ragnaros", 0, 80, 80)]
+        [InlineData("Backstage passes to a TAFKAL80ETC concert", 15, 20, 21)]
+        [InlineData("Conjured Mana Cake", 3, 6, 5)]
+
         public void TestAllItems(String itemName, int sellIn, int quality, int expectedQuality)
         {
             var app = getAppInstanceWithItem(new Item {Name = "", SellIn = 10, Quality = 20});
