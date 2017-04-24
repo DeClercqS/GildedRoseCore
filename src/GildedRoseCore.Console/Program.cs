@@ -13,7 +13,7 @@ namespace ConsoleApplication
 
     public class Program
     {
-        IList<Item> Items;
+        public IList<Item> Items {get; set;}
 
         public static void Main(string[] args)
         {
